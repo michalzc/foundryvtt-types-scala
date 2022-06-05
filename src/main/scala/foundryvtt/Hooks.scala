@@ -5,5 +5,5 @@ import scalajs.js
 @js.native
 @JSGlobal
 object Hooks extends js.Object {
-  def once(callbackName: String, function: js.Function): Unit = js.native
+  def once[FUN](callbackName: String, fun: FUN): Unit = js.native
 }
