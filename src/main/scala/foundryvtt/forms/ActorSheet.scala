@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 @JSGlobal("ActorSheet")
-class ActorSheet[T](actor: Actor[T], options: js.UndefOr[js.Object]) extends js.Object {}
+class ActorSheet[T, A <: Actor[T]](actor: A, options: js.UndefOr[js.Object]) extends js.Object {
+
+  def getData(): js.Object = js.native
+}
 
 @js.native
 @JSGlobal
