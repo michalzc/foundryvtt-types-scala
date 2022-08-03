@@ -1,4 +1,4 @@
-package foundryvtt.global.condig
+package foundryvtt.global.config
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
